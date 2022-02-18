@@ -27,6 +27,8 @@ public class Message {
     @JoinColumn(name = "user_id")
     private User author;
 
+    private String filename;
+
     public String getAuthorName() {
         if (author != null) {
             return author.getUsername();
